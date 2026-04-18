@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Privacy Policy — Negentropic Solutions Applications</title>
+  <title>Privacy Policy — Negentropic Solutions</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
     body {
@@ -13,56 +14,70 @@
       line-height: 1.6;
       color: #222;
     }
-    h1, h2 { border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
-    h2 { margin-top: 1.8em; }
-    a { color: #0a66c2; }
-    em.updated { color: #666; }
+
+    h1,
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+
+    h2 {
+      margin-top: 1.8em;
+    }
+
+    h3 {
+      margin-top: 1.2em;
+    }
+
+    a {
+      color: #0a66c2;
+    }
+
+    em.updated {
+      color: #666;
+    }
   </style>
 </head>
+
 <body>
   <h1>Privacy Policy</h1>
   <p><em class="updated">Last updated: April 18, 2026</em></p>
 
   <p>
-    This privacy policy applies to the internal applications operated by
-    Negentropic Solutions on behalf of its organizational clients,
-    specifically <strong>PA Business Insights</strong>. These applications
-    are internal tools for authorized users within the client organization.
-    They are not offered as public or consumer services.
+    This privacy policy describes how Negentropic Solutions LLC
+    ("Negentropic Solutions," "we," "us") handles data accessed by the
+    internal applications we build and operate on behalf of client
+    organizations. It applies to every application listed in the
+    <a href="#apps-covered">Applications Covered</a> section below. The
+    list will be kept current as new applications are added.
   </p>
-
-  <h2>Scope of this policy</h2>
 
   <p>
-    This policy describes how data is handled when the client organization
-    (Promethean Action) authorizes our applications to access data on its
-    behalf via Google OAuth 2.0. It applies specifically to data received
-    through Google APIs.
+    These applications are internal tools for authorized users within
+    their respective client organizations. They are not offered as
+    public or consumer services.
   </p>
 
-  <h2>Data we access</h2>
+  <h2 id="apps-covered">Applications covered</h2>
 
+  <h3>PA Business Insights</h3>
   <p>
-    PA Business Insights uses Google OAuth 2.0 to read a limited set of data
-    from Google services. The data accessed is:
+    An internal revenue analytics service. Accesses the following data
+    via Google OAuth 2.0:
   </p>
-
   <ul>
     <li>
-      <strong>YouTube channel metadata</strong> — channel ID and title.
-      Used to label per-channel rows in internal revenue reports.
+      <strong>YouTube channel metadata</strong> (channel ID and title)
+      — used to identify channels in internal reports.
     </li>
     <li>
-      <strong>YouTube Analytics monetary metrics</strong> — estimated
-      revenue, estimated ad revenue, estimated YouTube Premium partner
-      revenue, gross revenue, CPM, and views, at monthly grain. Used to
-      produce per-channel revenue breakdowns for internal business
-      reporting.
+      <strong>YouTube Analytics reports</strong> — revenue and
+      viewership metrics at monthly grain, used to produce internal
+      per-channel analysis.
     </li>
   </ul>
-
   <p>
-    The application only accesses data from YouTube channels that the
+    The application accesses data only from YouTube channels that the
     authorizing user owns or manages and explicitly grants access to
     during the Google OAuth consent flow.
   </p>
@@ -70,50 +85,59 @@
   <h2>How we use the data</h2>
 
   <p>
-    Accessed data is stored in the client organization's private reporting
-    database. It is used solely to produce internal revenue reports,
-    dashboards, and analyses for the client. It is not sold, shared with
-    third parties, or used for advertising, marketing, credit assessment,
-    or any purpose unrelated to the internal reporting function of the
+    Data accessed by each application is stored in a reporting database
+    dedicated to the client organization on whose behalf that
+    application operates. It is used solely to produce the internal
+    reports, dashboards, and analyses that each application was built
+    to produce. It is not sold, shared with third parties outside the
+    client organization, or used for advertising, marketing, credit
+    assessment, or any purpose unrelated to the stated function of the
     application.
   </p>
 
   <h2>Who can access the data</h2>
 
   <p>
-    Access is restricted to Negentropic Solutions personnel operating the
-    software on behalf of the client, and to authorized administrators
-    within the client organization. The application runs on infrastructure
-    dedicated to the client and is not shared with third parties.
+    Access is restricted to Negentropic Solutions personnel operating
+    the application on behalf of the client, and to authorized
+    administrators within the client organization. Each application
+    runs on infrastructure dedicated to its client — not on shared
+    multi-tenant systems — and is not accessible to other clients or
+    unrelated third parties.
   </p>
 
   <h2>Retention and deletion</h2>
 
   <p>
-    Authorized users can revoke access to the application at any time via
-    their Google Account security settings at
+    Authorized users can revoke an application's access to their
+    account at any time via the access-management settings of the
+    relevant third-party service. For Google-based access, this is at
     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
-    Upon revocation, the application stops accessing further data from the
-    affected account. Any cached data in the client organization's
-    reporting database can be deleted on request by contacting the address
-    listed below.
+    Upon revocation, the application stops accessing further data from
+    the affected account. Any cached data already in the client
+    organization's reporting database can be deleted on request by
+    contacting the address listed below.
   </p>
 
   <h2>Security</h2>
 
   <p>
-    OAuth credentials and refresh tokens are stored on infrastructure
-    dedicated to the client, with filesystem-level access restrictions
-    (owner-only read permissions). The application runs only on
-    client-controlled infrastructure, not on shared multi-tenant systems.
+    OAuth credentials, refresh tokens, and other access secrets are
+    stored on client-dedicated infrastructure with filesystem-level
+    access restrictions (owner-only read permissions). Each application
+    runs only on client-controlled infrastructure, not on shared
+    multi-tenant systems. Access to that infrastructure is limited to
+    the personnel identified above.
   </p>
 
   <h2>Google API Services User Data Policy</h2>
 
   <p>
-    PA Business Insights' use and transfer to any other app of information
-    received from Google APIs will adhere to the
-    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    For applications listed above that access Google APIs, our use and
+    transfer to any other app of information received from Google APIs
+    will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+      Policy</a>,
     including the Limited Use requirements.
   </p>
 
@@ -121,7 +145,9 @@
 
   <p>
     If we update this policy, we will update the "Last updated" date at
-    the top of this page.
+    the top of this page. The list of Applications Covered will be kept
+    current as new applications are added or existing applications are
+    retired.
   </p>
 
   <h2>Contact</h2>
@@ -136,4 +162,5 @@
   </p>
 
 </body>
+
 </html>
