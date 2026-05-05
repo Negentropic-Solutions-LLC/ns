@@ -41,15 +41,17 @@
 
 <body>
   <h1>Privacy Policy</h1>
-  <p><em class="updated">Last updated: April 18, 2026</em></p>
+  <p><em class="updated">Last updated: May 4, 2026</em></p>
 
   <p>
     This privacy policy describes how Negentropic Solutions LLC
-    ("Negentropic Solutions," "we," "us") handles data accessed by the
-    internal applications we build and operate on behalf of client
-    organizations. It applies to every application listed in the
-    <a href="#apps-covered">Applications Covered</a> section below. The
-    list will be kept current as new applications are added.
+    ("Negentropic Solutions," "we," "us") accesses, uses, stores, shares,
+    retains, and deletes user data — including data obtained from Google
+    APIs — through the internal applications we build and operate on
+    behalf of client organizations. It applies to every application
+    listed in the <a href="#apps-covered">Applications Covered</a>
+    section below. The list will be kept current as new applications are
+    added or existing applications are retired.
   </p>
 
   <p>
@@ -62,72 +64,187 @@
 
   <h3>PA Business Insights</h3>
   <p>
-    An internal revenue analytics service. Accesses the following data
-    via Google OAuth 2.0:
-  </p>
-  <ul>
-    <li>
-      <strong>YouTube channel metadata</strong> (channel ID and title)
-      — used to identify channels in internal reports.
-    </li>
-    <li>
-      <strong>YouTube Analytics reports</strong> — revenue and
-      viewership metrics at monthly grain, used to produce internal
-      per-channel analysis.
-    </li>
-  </ul>
-  <p>
-    The application accesses data only from YouTube channels that the
+    An internal revenue analytics service operated for a single client
+    organization. The application authenticates to Google APIs via OAuth
+    2.0 and accesses data only from YouTube channels that the
     authorizing user owns or manages and explicitly grants access to
     during the Google OAuth consent flow.
   </p>
 
-  <h2>How we use the data</h2>
+  <h2 id="data-accessed">Data we access</h2>
+
+  <p>
+    For each application, the specific Google user data accessed is
+    listed below. The application accesses no Google user data beyond
+    what is listed.
+  </p>
+
+  <h3>PA Business Insights — Google data accessed</h3>
+
+  <p>OAuth scopes requested:</p>
+  <ul>
+    <li>
+      <code>https://www.googleapis.com/auth/yt-analytics-monetary.readonly</code>
+      — read-only access to monetary YouTube Analytics reports for the
+      authorized channel.
+    </li>
+    <li>
+      <code>https://www.googleapis.com/auth/youtube.readonly</code> —
+      read-only access to the authorized channel's metadata (channel ID
+      and channel title), used to label rows in internal reports.
+    </li>
+  </ul>
+
+  <p>Specific data fields read from the Google APIs:</p>
+  <ul>
+    <li>
+      <strong>YouTube Data API</strong> — channel <code>id</code> and
+      <code>snippet.title</code> for the authorized channel only.
+    </li>
+    <li>
+      <strong>YouTube Analytics API</strong> — monthly aggregated
+      metrics for the authorized channel only:
+      <code>estimatedRevenue</code>, <code>estimatedAdRevenue</code>,
+      <code>estimatedRedPartnerRevenue</code>,
+      <code>grossRevenue</code>, <code>cpm</code>, and
+      <code>views</code>, with dimension <code>month</code>.
+    </li>
+  </ul>
+
+  <p>
+    The application does not access video content, comments, viewer
+    identities, subscriber lists, private messages, or any data outside
+    the authorized channel.
+  </p>
+
+  <h2 id="data-usage">How we use the data</h2>
 
   <p>
     Data accessed by each application is stored in a reporting database
     dedicated to the client organization on whose behalf that
     application operates. It is used solely to produce the internal
-    reports, dashboards, and analyses that each application was built
-    to produce. It is not sold, shared with third parties outside the
-    client organization, or used for advertising, marketing, credit
-    assessment, or any purpose unrelated to the stated function of the
-    application.
+    reports, dashboards, and analyses that each application was built to
+    produce.
   </p>
 
-  <h2>Who can access the data</h2>
+  <p>For PA Business Insights, the YouTube data described above is used
+    to:</p>
+  <ul>
+    <li>
+      Produce per-channel, per-month revenue and engagement summaries
+      for the client organization's internal financial reporting.
+    </li>
+    <li>
+      Reconcile platform-reported revenue against the same revenue as
+      recorded in the client's accounting system.
+    </li>
+  </ul>
 
   <p>
-    Access is restricted to Negentropic Solutions personnel operating
-    the application on behalf of the client, and to authorized
-    administrators within the client organization. Each application
-    runs on infrastructure dedicated to its client — not on shared
-    multi-tenant systems — and is not accessible to other clients or
-    unrelated third parties.
+    Google user data is <strong>not</strong> used for advertising, sold
+    or licensed to any third party, used for credit assessment, used to
+    train artificial intelligence or machine learning models, or used
+    for any purpose unrelated to the stated function of the application.
   </p>
 
-  <h2>Retention and deletion</h2>
+  <h2 id="data-sharing">How we share the data</h2>
 
   <p>
-    Authorized users can revoke an application's access to their
-    account at any time via the access-management settings of the
-    relevant third-party service. For Google-based access, this is at
-    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
-    Upon revocation, the application stops accessing further data from
-    the affected account. Any cached data already in the client
-    organization's reporting database can be deleted on request by
-    contacting the address listed below.
+    Negentropic Solutions does not sell, transfer, or otherwise disclose
+    Google user data to any third party outside the client organization
+    on whose behalf the application is operated. Specifically:
+  </p>
+  <ul>
+    <li>
+      Google user data is not shared with advertisers, data brokers,
+      analytics providers, or other third-party service vendors.
+    </li>
+    <li>
+      Google user data is not transferred to other applications, whether
+      operated by Negentropic Solutions or by others.
+    </li>
+    <li>
+      Google user data is not used to train artificial intelligence or
+      machine learning models — neither our own nor any third party's.
+    </li>
+  </ul>
+
+  <p>
+    Within the client organization, access to the application's
+    reporting database is limited to authorized administrators. On the
+    Negentropic Solutions side, access is limited to the personnel
+    operating the application on behalf of that client.
   </p>
 
-  <h2>Security</h2>
+  <h2 id="data-storage">How we store and protect the data</h2>
 
   <p>
-    OAuth credentials, refresh tokens, and other access secrets are
-    stored on client-dedicated infrastructure with filesystem-level
-    access restrictions (owner-only read permissions). Each application
-    runs only on client-controlled infrastructure, not on shared
-    multi-tenant systems. Access to that infrastructure is limited to
-    the personnel identified above.
+    Data is stored on infrastructure dedicated to the client
+    organization — not on shared multi-tenant systems. Specifically:
+  </p>
+  <ul>
+    <li>
+      Data is stored in a database file on a single-tenant virtual
+      private server controlled by the client organization.
+    </li>
+    <li>
+      OAuth credentials and refresh tokens are stored as files with
+      owner-only filesystem permissions (Unix mode 600).
+    </li>
+    <li>
+      The virtual private server accepts inbound connections only via
+      SSH key authentication on a single port; password authentication
+      is disabled and root login is disabled.
+    </li>
+    <li>
+      The virtual private server runs a host firewall that rejects all
+      inbound traffic other than SSH.
+    </li>
+    <li>
+      Repeated failed authentication attempts are blocked automatically.
+    </li>
+    <li>
+      Operating system security updates are applied automatically.
+    </li>
+    <li>
+      All API calls between the application and Google are made over
+      TLS / HTTPS.
+    </li>
+  </ul>
+
+  <h2 id="data-retention">How long we retain the data, and how to request deletion</h2>
+
+  <p>
+    For each application, cached Google user data is retained for as
+    long as the application is in active operation, because the data is
+    the substrate for time-series analysis (e.g., year-over-year revenue
+    trends).
+  </p>
+
+  <p>Authorized users may request deletion or revocation at any time:</p>
+  <ul>
+    <li>
+      <strong>Revoke access via Google.</strong> At
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+      the authorizing user can revoke the application's access to their
+      Google account. Upon revocation, the application stops fetching
+      further data from the affected account on the next sync.
+    </li>
+    <li>
+      <strong>Delete cached data on request.</strong> An authorizing
+      user, or an authorized administrator within the client
+      organization, may request deletion of cached Google user data by
+      emailing
+      <a href="mailto:support@negentropic.llc">support@negentropic.llc</a>.
+      Deletion is typically completed within 30 days of the request.
+    </li>
+  </ul>
+
+  <p>
+    If an application is decommissioned, all OAuth credentials are
+    revoked, all cached Google user data is deleted from the reporting
+    database, and the entry for that application is moved out of the
+    Applications Covered section above.
   </p>
 
   <h2>Google API Services User Data Policy</h2>
