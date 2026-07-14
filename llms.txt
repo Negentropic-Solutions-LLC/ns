@@ -1,0 +1,18 @@
+# Negentropic Solutions
+
+> Negentropic Solutions is a one-person consultancy (Ben Deniston) that builds production, AI-powered integrations and automation for non-profits and businesses. The premise: in the age of AI, your own data, voice, and brand are your real advantage — so the work is to organize your data first, then put review-gated AI on top that runs on your own material, in your voice, with a human in the loop. Named specialties are NationBuilder and NetSuite. Everything is custom-built, maintainable, and owned by the client — no lock-in.
+
+## Services
+- [AI Automation](https://negentropicsolutions.com/ai-automation.html): Find where AI and automation will genuinely help, then build it into the real workflow — reading, classifying, routing, summarizing, and drafting on your own data, with a person approving before anything goes out.
+- [Own Your Integrations](https://negentropicsolutions.com/integrations.html): Connect the tools you already run into reliable, maintained, code-based integrations you own — off brittle, metered no-code — plus the AI steps no-code can't reach.
+- [NetSuite / ERP Integration](https://negentropicsolutions.com/netsuite.html): Connect NetSuite to the rest of the stack and automate the work on top of it (purchasing, e-commerce, reporting); custom SuiteScript where prebuilt connectors fall short.
+- [NationBuilder Implementation & Integration](https://negentropicsolutions.com/nationbuilder.html): Set up, connect, and automate your Nation so supporter data works for you; AI surfaces the specific people who need follow-up. Led by a Certified NationBuilder Expert.
+
+## Approach & work
+- [Principles for effective AI](https://negentropicsolutions.com/principles.html): How the work decides when *not* to use AI, avoids generic output, sets honest expectations, keeps a human in the loop, and chooses value over hype.
+- [Selected work](https://negentropicsolutions.com/portfolio.html): Anonymized case studies across AI automation, data foundations, custom integrations, NetSuite, and NationBuilder.
+- [Work with me](https://negentropicsolutions.com/work-with-us.html): How an engagement is structured — every engagement starts with a free consultation.
+- [About](https://negentropicsolutions.com/about.html): Ben Deniston — owner and operator; background, path, and how he works.
+
+## Contact
+- Email: contact@negentropic.llc
