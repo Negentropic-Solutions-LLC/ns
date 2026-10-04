@@ -11,7 +11,7 @@
 ## Approach & work
 - [Principles for effective AI](https://negentropicsolutions.com/principles.html): How the work decides when *not* to use AI, avoids generic output, sets honest expectations, keeps a human in the loop, and chooses value over hype.
 - [Selected work](https://negentropicsolutions.com/portfolio.html): Anonymized case studies across AI automation, data foundations, custom integrations, NetSuite, and NationBuilder.
-- [Work with me](https://negentropicsolutions.com/work-with-us.html): How an engagement is structured — every engagement starts with a free consultation.
+- [Work with me](https://negentropicsolutions.com/work-with-us.html): How we work together — every project starts with a free consultation.
 - [About](https://negentropicsolutions.com/about.html): Ben Deniston — owner and operator; background, path, and how he works.
 
 ## Contact
